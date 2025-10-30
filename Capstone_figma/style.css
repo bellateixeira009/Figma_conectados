@@ -1,0 +1,466 @@
+:root {
+  --cor-primaria: #352BBA;
+  --cor-secundaria: #E5FF71;
+  --cor-destaque: #ACADF2;
+  --cor-botao: #3b82f6;
+  --cor-cinza: #aeb7c1;
+  --cor-texto: #000;
+  --cor-branco: #fff;
+  --fonte-principal: "IBM Plex Mono", monospace;
+  --fonte-secundaria: "Caveat", cursive;
+  --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+  --font-grande: 3em;
+  --font-media: 1.5em;
+  --font-pequena: 1em;
+}
+
+.centralizar {
+  text-align: center;
+  justify-content: center;
+}
+
+.fonte-ibm {
+  font-family: var(--fonte-principal);
+  font-weight: 700;
+  font-style: normal;
+  font-size: var(--font-grande);
+}
+
+h1 {
+  color: var(--cor-primaria);
+}
+
+h2 {
+  font-family: var(--fonte-secundaria);
+  font-size: var(--font-grande);
+  font-weight: lighter;
+  background-color: var(--cor-destaque);
+  padding: 0px 80px 10px 30px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 0;
+}
+
+a.btn1, a.btn2 {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.btn1 {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  font-weight: bold;
+  font-size: 1.3rem;
+  box-shadow: 5px 5px 0px 0px var(--cor-secundaria);
+  margin: 15px;
+  border-radius: 15px;
+  padding: 15px 40px;
+  cursor: pointer;
+}
+
+a.btn2 {
+  width: 200px;
+  background-color: var(--cor-secundaria);
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 15px;
+  box-shadow: 5px 5px 0px 0px var(--cor-primaria);
+  margin-top: 4em;
+  border-radius: 15px;
+  cursor: pointer;
+  color: var(--cor-texto);
+  text-align: center;
+}
+
+.fluent {
+  color: var(--cor-secundaria);
+  -webkit-text-stroke: 1px black;
+}
+
+.way {
+  color: var(--cor-primaria);
+  -webkit-text-stroke: 1px black;
+}
+
+body {
+  margin: 50px;
+  font-family: var(--fonte-padrao);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  flex-wrap: wrap;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin-bottom: 200px;
+  flex-wrap: wrap;
+}
+
+.banner-textos {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 300px;
+}
+
+.banner img {
+  width: 40%;
+  height: auto;
+  margin: auto 50px;
+  max-width: 450px;
+}
+
+.h1inicio {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  font-size: var(--font-grande);
+  -webkit-text-stroke: 1px black;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.banner-textos p {
+  margin: 2px 0;
+  font-size: 1.3em;
+}
+
+.beneficios {
+  margin-bottom: 200px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+ul li {
+  background-color: var(--cor-destaque);
+  padding: 3px 25px;
+  border-radius: 8px;
+  font-size: 1.5em;
+  font-weight: bold;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#planos {
+  margin-top: 150px;
+  margin-bottom: 200px;
+}
+
+.planos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  gap: 20px;
+}
+
+.plano, .planoavancado {
+  background-color: var(--cor-cinza);
+  color: var(--cor-texto);
+  text-align: center;
+  padding: 25px 40px;
+  border-radius: 10px;
+  width: 280px;
+}
+
+.plano h3, .planoavancado h3 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.plano p, .planoavancado p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.plano a, .planoavancado a {
+  background-color: transparent;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.planoavancado a {
+  color: var(--cor-branco);
+}
+
+.planoavancado {
+  background-color: var(--cor-botao);
+  color: var(--cor-branco);
+  transform: scale(1.05);
+  position: relative;
+}
+
+#formulario h3 {
+  font-size: 2em;
+}
+
+#formulario h1 {
+  margin: 60px 0px;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 900px;
+  max-width: 90%;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 25px;
+  border: 2px solid #868585;
+  border-radius: 12px;
+  font-size: 1.5em;
+  outline: none;
+  box-sizing: border-box;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formulario input::placeholder {
+  color: #aaa;
+  font-weight: bold;
+}
+
+.formulario button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--cor-secundaria);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--cor-texto);
+  box-shadow: 5px 5px 0px 0px var(--cor-primaria);
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.faq {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+}
+
+.faq-item h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 15px;
+  margin: 0;
+  text-align: left;
+  background-color: var(--cor-destaque);
+  border: 2px solid black;
+  border-radius: 12px;
+}
+
+.faq-item p {
+  background-color: var(--cor-branco);
+  font-size: 1.1em;
+  color: #333;
+  margin: 5px;
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+  font-size: 1.3em;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* :hover. :focus dia 12 */
+a.btn1:hover, a.btn2:hover,
+.plano button:hover, .planoavancado button:hover,
+.formulario button:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 7px 7px 0px 0px var(--cor-secundaria);
+    transition: all 0.2s ease;
+}
+.formulario input:focus {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 5px var(--cor-primaria);
+}
+
+@media (max-width: 900px) {
+  body {
+    margin: 20px;
+    overflow-x: hidden;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .fonte-ibm {
+    font-size: 2.3em;
+  }
+
+  .btn1 {
+    padding: 10px 25px;
+    font-size: 1em;
+  }
+
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+
+  .banner-textos {
+    align-items: center;
+  }
+
+  .banner img {
+    width: 80%;
+    max-width: 400px;
+    margin: 0;
+  }
+
+  .h1inicio {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 2em;
+    padding: 10px 25px;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  ul li {
+    font-size: 1.3em;
+    padding: 10px 25px;
+  }
+
+  .planos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plano, .planoavancado {
+    width: 90%;
+    max-width: 350px;
+    transform: none;
+  }
+
+  .formulario {
+    width: 100%;
+    max-width: 500px;
+    gap: 25px;
+  }
+
+  .formulario input {
+    padding: 20px;
+    font-size: 1.1em;
+  }
+
+  .formulario button {
+    font-size: 1.2em;
+    margin-top: 40px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .fonte-ibm {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  .btn2 {
+    width: 100%;
+    font-size: 1.1em;
+    margin-top: 2em;
+    margin-bottom: 60px;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+
+  .beneficios h1 {
+    font-size: 1.8em;
+  }
+
+  ul li {
+    font-size: 1.1em;
+  }
+
+  .plano, .planoavancado {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .formulario input {
+    font-size: 1em;
+  }
+
+  .formulario button {
+    font-size: 1.1em;
+    margin-bottom: 50px;
+  }
+
+  footer h1 {
+    font-size: 1.8em;
+  }
+
+  footer h3 {
+    font-size: 1em;
+  }
+}
